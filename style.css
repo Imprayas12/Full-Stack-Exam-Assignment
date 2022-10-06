@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     padding: 2px;
+    font-family: 'Poppins';
+    transition: 0.5s;
 }
 
 /* html {
@@ -8,16 +10,13 @@
 } */
 
 .header {
+    height:13vh;
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(36,13,13);
     color: #fff;
-    position: sticky;
-    left: 0;
-    right: 0;
-    top:0;
 }
 .logo-item img{
     height: 2.95rem;
@@ -44,4 +43,145 @@
 .options:hover {
     color:#29d9d5;
     cursor: pointer;
+}
+
+button{
+    padding: 12px;
+    border-radius: 25px;
+    width: 150px;
+    color: #29d9d5;
+    border: 1px solid #29d9d5;
+    background: none;
+    transition: 0.5s;
+    font-size:15px ;
+}
+
+button:hover{
+    color: black;
+    background-color: #29d9d5;
+    cursor: pointer;
+}
+
+.production-message {
+    border: 1px solid bisque;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    background-color: bisque;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top:8px;
+}
+
+.production-message > h1 {
+    color:darkmagenta;
+    margin-top: -1px;
+}
+.production-message > p {
+    margin-top: -23px;
+}
+
+.images img {
+    height:37vh;
+    width:26vw;
+    border-radius:25px ;
+} 
+.image-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width:80%;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    margin-top: 10px;
+}
+
+.images {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.images img {
+    display:block;
+}
+
+.icon {
+    display: none;
+}
+.images:hover {
+    display: absolute;
+    bottom: 20;
+    left: 20;
+    top:20;
+}
+.images:hover {
+    filter:grayscale(150%);
+}
+
+.banner {
+    margin-top:30px;
+    padding-top:50px;
+    padding-bottom:50px;
+    text-align: center;
+    width: 100vw;
+    background: url(bay_10-wallpaper-1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.banner h3 {
+    color: aliceblue;
+}
+.banner p {
+    padding: 0 150px 0 150px;
+    font-size: 15px;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icon {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    color: #29d9d5;   
+}
+
+.icons {
+    height: fit-content;
+    padding: 6px;
+    border-radius: 25px;
+    border: 1px solid #29d9d5;
+}
+
+.icons:hover {
+    color:black;
+    background-color: #29d9d5;
+}
+.footer p,h4{
+    opacity: 0.5;
+}
+input {
+    width: 20vw;
+    color:white;
+    border:1px solid #29d9d5;
+    background: none;
+    height:7vh;
+    padding: 10px;
+    border-radius: 25px;
+}
+.footer button {
+    display: block;
+    margin-top: 20px;
 }
